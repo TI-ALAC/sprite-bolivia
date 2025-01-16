@@ -19,7 +19,7 @@ document.getElementById("img-province-lluvia").src="img/"+province+"/lluvia.jpg"
 document.getElementById("img-province-parcialmentenublado").src="img/"+province+"/parcialmentenublado.jpg"
 
 async function init() {
-  const coord = await axios.get(`https://apialacooh.alacoohecuador.com/playlist/panel/${idPanel}`);
+  const coord = await axios.get(`https://apialacplayer.alacoohbolivia.com/playlist/panel/${idPanel}`);
   var latitud = coord.data.data[0].point.coordinates[0];
   var longitud = coord.data.data[0].point.coordinates[1];
   const response = await axios.get(`https://weatherstation.alacoohperu.pe/api/clima/${latitud}/${longitud}`);
