@@ -13,10 +13,10 @@ function updateImage() {
   const imgSoleado = document.getElementById('img-province-soleado');
   const imgLluvia = document.getElementById('img-province-lluvia');
 
+  console.log("window.innerWidth",window.innerWidth)
   if (window.innerWidth <= 480) {
     imgNublado.src = `img/${province}/nublado-cuadrada.jpg`;
     imgSoleado.src = `img/${province}/Soleado-cuadrada.jpg`;
-    console.log("imgSoleado.src",imgSoleado.src)
     imgLluvia.src = `img/${province}/lluvia-cuadrada.jpg`;
   } else if (window.innerWidth <= 768) {
     imgNublado.src = `img/${province}/nublado.jpg`;
