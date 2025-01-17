@@ -83,7 +83,7 @@ img {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 510px) {
     #millones {
         font-size: 70pt !important;
         font-family: 'Roboto', sans-serif;
