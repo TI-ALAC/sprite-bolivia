@@ -37,7 +37,7 @@ async function init() {
   const unir = palabraDia + "," + palabraFecha;
   document.getElementById('title1').innerHTML = result;
 
-  if (text_clima == 'niebla' || text_clima == 'muy nuboso' || text_clima == 'bruma' ) {
+  if (text_clima == 'niebla' || text_clima == 'muy nuboso' || text_clima == 'bruma' || text_clima == 'nubes' ) {
     content3.style.display = "block";
   } else if (text_clima == 'cielo claro' || text_clima == 'algo de nubes'|| text_clima == 'nubes dispersas') {
     content4.style.display = "block";
@@ -45,8 +45,6 @@ async function init() {
   } else if (text_clima == 'lluvia ligera' || text_clima == 'tormenta con lluvia ligera'|| text_clima == 'lluvia moderada' || text_clima == 'tormenta' || text_clima == 'tormenta con lluvia intensa' || text_clima == 'tormenta con lluvia' || text_clima == 'llovizna ligera' || text_clima == 'llovizna moderada' || text_clima == 'llovizna' || text_clima == 'tormentas eléctricas dispersas'|| text_clima == 'chubascos'|| text_clima == 'llovizna débil') {
     content5.style.display = "block";
 
-  }else if (text_clima == 'nubes') {
-    content7.style.display = "block";
   }
 
 }

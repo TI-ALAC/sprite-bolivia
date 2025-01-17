@@ -81,3 +81,16 @@ img {
     }
 
 }
+
+
+@media only screen and (max-width: 480px) {
+    #millones {
+        font-size: 70pt !important;
+        font-family: 'Roboto', sans-serif;
+        color: #FFF !important;
+        left: 76%;
+        top: 32%;
+        font-style: normal;
+        position: absolute;
+    }
+}
