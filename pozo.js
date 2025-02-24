@@ -41,7 +41,7 @@ async function init() {
   const palabraDia = palabras[0][0].toUpperCase() + palabras[0].substr(1);
   const palabraFecha = palabras[1];
   const unir = palabraDia + "," + palabraFecha;
-  document.getElementById('title1').innerHTML = result;
+  document.getElementById('title1').innerHTML = result+"°";
 
   if (text_clima == 'niebla' || text_clima == 'muy nuboso' || text_clima == 'bruma' || text_clima == 'nubes' ) {
     content3.style.display = "block";
@@ -52,8 +52,39 @@ async function init() {
     content5.style.display = "block";
 
   }
-
+  updateClock();
 }
+
+function updateClock() {
+  const months = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
+  
+
+  const now = new Date();
+  
+  let date = now.getDate();
+  console.log("date",date)
+  const month = months[now.getMonth()];
+  //let month = now.getMonth() + 1;
+  let year = now.getFullYear();
+  let day = now.getDay();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let ampm = hours >= 12 ? 'PM' : 'AM';
+  
+  // Agrega un cero delante si el número es menor a 10
+  hours = hours < 10 ? '0' + hours : hours;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+
+  document.getElementById('clock').innerText = `${hours}:${minutes} `;
+  document.getElementById('date').innerText = `${date} ${month} ${year}`;
+  document.getElementById('hour').innerText = `${ampm}`;
+}
+
+// Actualiza el reloj cada segundo
+setInterval(updateClock, 1000);
+
+// Llamada inicial para evitar el retraso de 1 segundo
+
 
 window.addEventListener('resize', updateImage);
 window.addEventListener('load', updateImage);

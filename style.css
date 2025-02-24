@@ -79,6 +79,37 @@ img {
         position: absolute;
     
     }
+    #date {
+        font-size: 20pt !important;
+        font-family: 'Roboto', sans-serif;
+        color: #FFF !important;
+        left: 39%;
+        top: 11%;
+        font-style: normal;
+        position: absolute;
+    
+    }
+    #clock {
+        font-size: 38pt !important;
+        font-family: 'Roboto', sans-serif;
+        color: #FFF !important;
+        left: 61%;
+        top: 6%;
+        font-style: normal;
+        position: absolute;
+    
+    }
+    #hour {
+        font-size: 18pt !important;
+        font-family: 'Roboto', sans-serif;
+        color: #FFF !important;
+        left: 79%;
+        top: 10%;
+        font-style: normal;
+        position: absolute;
+    
+    }
+
 
 }
 
@@ -92,5 +123,35 @@ img {
         top: 63%;
         font-style: normal;
         position: absolute;
+    }
+    #date {
+        font-size: 19pt !important;
+        font-family: 'Roboto', sans-serif;
+        color: #FFF !important;
+        left: 34%;
+        top: 53%;
+        font-style: normal;
+        position: absolute;
+    
+    }
+    #clock {
+        font-size: 37pt !important;
+        font-family: 'Roboto', sans-serif;
+        color: #FFF !important;
+        left: 66%;
+        top: 49%;
+        font-style: normal;
+        position: absolute;
+    
+    }
+    #hour {
+        font-size: 17pt !important;
+        font-family: 'Roboto', sans-serif;
+        color: #FFF !important;
+        left: 91%;
+        top: 52%;
+        font-style: normal;
+        position: absolute;
+    
     }
 }
